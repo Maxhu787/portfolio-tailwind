@@ -2,34 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./build/tailwind.css" />
     <title>Hu Kai-Hsiang</title>
+
     <script
       src="https://kit.fontawesome.com/b60596f9d0.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="Hu Kai-Hsiang" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
   <body>
     <div id="container">
       <div id="left" class="half">
-        <h1>Hu&nbsp;Kai&#8209;Hsiang</h1>
-        <p id="eee">Web development | Competitive programming</p>
+        <h1 style="margin-top: 20px">Hu&nbsp;Kai&#8209;Hsiang</h1>
+        <p style="margin-top: 20px" id="eee">
+          Web development | Competitive programming
+        </p>
         <p id="fff">Self taught programmer & high school student</p>
         <p id="country">BASED IN TAIWAN <span>🇹🇼</span></p>
         <footer id="footer">© 2025 Hu Kai-Hsiang. All rights reserved.</footer>
@@ -47,6 +35,14 @@
           >
             <i class="fa-brands fa-square-facebook"></i>
           </a>
+          <!-- <a
+            class="hidden"
+            href="https://twitter.com/hu_kaixiang"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-twitter"></i>
+          </a> -->
+          <!-- https://placehold.co/600x400 -->
           <a href="mailto:maxhu787@gmail.com">
             <i class="fa-solid fa-square-envelope"></i>
           </a>
@@ -57,6 +53,12 @@
       </div>
 
       <div id="right" class="half">
+        <!-- <div class="section">
+          <h2 class="section-title">Stats</h2>
+          <div class="item">🔹 Project 1 - Web App Development</div>
+          <div class="item">🔹 Project 2 - AI Chatbot</div>
+          <div class="item">🔹 Project 3 - E-commerce Website</div>
+        </div> -->
         <div id="bio" class="section">
           <h2 class="section-title">Bio</h2>
           <div class="item" style="padding: 0px 20px">
@@ -64,7 +66,7 @@
               大家好<span class="wave"> &nbsp;👋&nbsp;</span> 我是
               <span style="color: rgb(211, 211, 211)">胡凱翔 </span>
               <span style="color: #3b81f6">(匿名 g4o2)</span><br />
-              高二生 209班 Bilingual Class<br />
+              高一生 109班 Bilingual Class<br />
               <br />
               - 116th 屏中資訊研習社 社長兼教學
             </p>
@@ -73,7 +75,9 @@
 
         <div id="languages" class="section">
           <h2 class="section-title">Languages</h2>
-          <div class="grid">
+          <div
+            class="pt-[1.875rem] pb-5 grid grid-cols-[repeat(auto-fit,minmax(6.25rem,1fr))] gap-5"
+          >
             <div class="language">
               <img src="./img/languages/react.png" alt="React Logo" />
               <div class="name">React</div>
@@ -176,7 +180,7 @@
 
         <div id="certifications" class="section">
           <h2 class="section-title">Certifications</h2>
-          <div class="item">🔹 &nbsp;APCS 觀念 4 級分 | 實作 3 級分</div>
+          <div class="item">🔹 &nbsp;APCS 觀念 3 級分 | 實作 3 級分</div>
           <div class="item">🔹 &nbsp;CSFC Python 檢定 (進階級)</div>
           <div class="item">🔹 &nbsp;GEPT 中高級初試通過</div>
           <div class="item">🔹 &nbsp;GEPT 中級通過</div>
@@ -200,9 +204,21 @@
           </div>
         </div>
 
+        <!-- <div class="section">
+          <h2 class="section-title">Stats</h2>
+          <div class="item">🔹 Name: 胡凱翔 (Hu Kai-Hsiang)</div>
+          <div class="item">🔹 Age: 16yrs</div>
+          <div class="item">🔹 Height: 181cm</div>
+          <div class="item">🔹 Languages: Chinese, English, Taiwanese</div>
+          <div class="item">🔹 Hobbies: 👨‍💻 🎻 🎹</div>
+        </div> -->
+
         <div id="blog" class="section">
           <h2 class="section-title">Logs</h2>
-          <div class="item" style="overflow-x: scroll; padding: 20px">
+          <div
+            class="item"
+            style="overflow-x: scroll; padding: 20px; gap: 10px"
+          >
             <div style="display: flex; flex-direction: column; gap: 10px">
               <img
                 src="https://raw.githubusercontent.com/Maxhu787/gallery/refs/heads/main/mfc/mfc-7.jpg"
@@ -248,6 +264,11 @@
             </div>
           </div>
 
+          <!-- <a
+            href="https://hspc.csie.ncku.edu.tw/2025/"
+            target="_blank"
+            style="text-decoration: none; color: #fff"
+          > -->
           <div class="item">
             <img
               src="./img/certificates/other/hspc-2025-1.png"
@@ -261,6 +282,7 @@
               <div class="blog-description">排名 93rd place (135隊)</div>
             </div>
           </div>
+          <!-- </a> -->
 
           <div class="item">
             <img src="./img/logs/IMG_20250302_164637.jpg" alt="Event Image" />

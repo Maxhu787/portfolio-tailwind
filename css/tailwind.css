@@ -1,0 +1,184 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Moderustic:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  @apply text-lg;
+}
+
+body {
+  @apply bg-[#010e19] text-white flex h-screen m-0 p-0;
+  font-family: "Moderustic", sans-serif;
+  animation: fade-in 3s forwards; /* Use CSS fallback if not defined in Tailwind */
+}
+
+#container {
+  @apply flex flex-row w-full h-auto;
+}
+
+.half {
+  @apply w-6/12 h-screen;
+}
+
+#left {
+  @apply px-[5.625rem] py-[3.75rem] box-border;
+}
+
+#left h1 {
+  @apply text-[3.125rem] font-bold text-[#3b81f6];
+  font-family: "Manrope", sans-serif;
+}
+
+#eee {
+  @apply mt-[-1.5625rem] text-xl;
+}
+
+#fff {
+  @apply text-base text-[rgb(211,211,211)];
+}
+
+#country {
+  @apply font-bold text-neutral-300;
+  font-family: "Raleway", sans-serif;
+}
+
+#country span {
+  @apply text-xl;
+}
+
+#footer {
+  @apply text-sm text-left text-neutral-300 mt-10;
+}
+
+#right {
+  @apply overflow-y-auto px-[5.625rem] py-[3.75rem] box-border backdrop-blur-[10px];
+}
+
+#languages .language {
+  @apply flex flex-col items-center text-center;
+}
+
+#languages .language img {
+  @apply h-[3.125rem] mb-2.5;
+}
+
+#languages .language .name {
+  @apply text-base font-bold;
+}
+
+#projects .item {
+  @apply p-[0.9375rem] mb-[0.9375rem];
+}
+
+#projects .item img {
+  @apply w-[7.5rem] mr-[0.9375rem] rounded-md;
+}
+
+#projects .content {
+  @apply flex flex-col;
+}
+
+#projects .title {
+  @apply font-bold text-lg;
+}
+
+#projects .description {
+  @apply text-sm text-[#aaa] mt-[0.3125rem];
+}
+
+#certifications .item {
+  @apply text-lg mt-2.5 px-2 py-3;
+}
+
+#timeline .item {
+  @apply justify-evenly relative px-10 py-[1.875rem];
+}
+
+#timeline .timeline-item {
+  @apply flex flex-col items-center text-center relative;
+}
+
+#timeline .timeline-year {
+  @apply text-base font-bold mb-5;
+}
+
+#timeline .timeline-school {
+  @apply text-sm text-[#aaa];
+}
+
+#blog .item {
+  @apply p-[0.9375rem] mb-[0.9375rem];
+}
+
+#blog .item img {
+  @apply w-[7.1875rem] mr-[0.9375rem] rounded-md;
+}
+
+.blog-content {
+  @apply flex flex-col;
+}
+
+.blog-title {
+  @apply font-bold text-lg;
+}
+
+.blog-date {
+  @apply text-sm text-[#aaa] mt-[0.3125rem];
+}
+
+.blog-description {
+  @apply text-[#e3e3e3] mt-[0.3125rem];
+}
+
+#socials {
+  @apply select-none;
+}
+
+#socials a {
+  @apply text-white text-[2.375rem] inline-block px-2.5 py-5 no-underline transition-all duration-[1s] ease-[ease-in-out] hover:text-[#3b81f6] hover:transition-[color] hover:duration-[0.1s] hover:ease-[ease-in-out];
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-3.5 pb-[0.3125rem] border-b-2 border-b-[#3b81f6] border-solid;
+}
+
+.item {
+  @apply flex items-center transition-all duration-[0.1s] ease-[ease-in-out] bg-[#121b26] mt-2.5 p-2 rounded-lg hover:cursor-pointer hover:bg-[#1e2a38];
+}
+
+.wave {
+  @apply animate-[wave-anim_2.5s_infinite] origin-[70%_70%] inline-block;
+}
+
+@media (max-width: 50rem) {
+  .half {
+    @apply w-full h-auto;
+  }
+  #left {
+    @apply px-10 py-[3.75rem];
+  }
+  #right {
+    @apply overflow-visible h-auto p-10;
+  }
+  #container {
+    @apply flex-col;
+  }
+  #left h1 {
+    @apply text-[2.8125rem];
+  }
+  html {
+    @apply text-base;
+  }
+}
+
+@media (max-width: 25rem) {
+  #right {
+    @apply overflow-visible h-auto p-5;
+  }
+}
+
+/* NOTE: For animation keyframes like fade-in and wave-anim, you must add custom keyframes
+   in your Tailwind config if you're not seeing them work. Tailwind doesn’t support raw @keyframes in the CSS @apply context. */
